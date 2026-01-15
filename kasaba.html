@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boshlang‘ich kasaba uyushma qo‘mitasi</title>
+  <style>
+    :root {
+      --primary: #0b5ed7;
+      --secondary: #6610f2;
+      --accent: #20c997;
+      --bg: #f8f9fa;
+      --dark: #212529;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #eef2ff, #f8f9fa);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--primary);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: 0.3s;
+    }
+    nav a:hover::after { width: 100%; }
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 8px; }
+    footer {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      nav a { display: inline-block; margin: 8px; }
+      .container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Boshlang‘ich kasaba uyushma qo‘mitasi</h1>
+  <p>Muhammad al-Xorazmiy nomidagi Toshkent axborot texnologiyalari universiteti</p>
+</header>
+
+<nav>
+  <a href="#rahbariyat">Rahbariyat</a>
+  <a href="#faoliyat">Faoliyat</a>
+  <a href="#huquqlar">Huquqlar</a>
+  <a href="#vazifalar">Vazifalar</a>
+  <a href="#aloqa">Aloqa</a>
+</nav>
+
+<div class="container">
+
+  <section id="rahbariyat">
+    <h2>Qo‘mita Rahbariyati</h2>
+    <p><strong>Rais:</strong> Jumayev Sohib Bahodirovich</p>
+    <p><strong>Telefon:</strong> +998 71 238-64-02</p>
+    <p><strong>Email:</strong> <a href="mailto:s.jumaev@tuit.uz">s.jumaev@tuit.uz</a></p>
+    <p><strong>Qabul vaqti:</strong> Dushanba – Juma, 15:00 – 17:00</p>
+  </section>
+
+  <section id="faoliyat">
+    <h2>Qo‘mitaning Faoliyati</h2>
+    <p>
+      Boshlang‘ich kasaba uyushma qo‘mitasi universitet xodimlarining ijtimoiy,
+      iqtisodiy va huquqiy manfaatlarini himoya qilish, mehnat sharoitlarini
+      yaxshilash hamda sog‘lom va barqaror ish muhitini yaratishga xizmat qiladi.
+    </p>
+  </section>
+
+  <section id="huquqlar">
+    <h2>A’zolarning Huquqlari va Imtiyozlari</h2>
+    <ul>
+      <li>Kasaba uyushmasiga ixtiyoriy a’zo bo‘lish</li>
+      <li>Mehnat masalalarida huquqiy yordam olish</li>
+      <li>Sanatoriya va dam olish maskanlariga yo‘llanmalar</li>
+      <li>Kasaba uyushma tadbirlarida ishtirok etish</li>
+    </ul>
+  </section>
+
+  <section id="vazifalar">
+    <h2>Qo‘mitaning Asosiy Vazifalari</h2>
+    <ul>
+      <li>Xodimlarning ijtimoiy himoyasini ta’minlash</li>
+      <li>Mehnat sharoitlari ustidan jamoatchilik nazoratini olib borish</li>
+      <li>Madaniy va sport tadbirlarini tashkil etish</li>
+      <li>Universitet rahbariyati bilan hamkorlik qilish</li>
+    </ul>
+  </section>
+
+  <section id="aloqa">
+    <h2>Bog‘lanish</h2>
+    <p><strong>Manzil:</strong> Toshkent sh., Amir Temur ko‘chasi 108</p>
+    <p><strong>Telefon:</strong> +998 71 238-64-89</p>
+    <p><strong>Email:</strong> info@tuit.uz</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 TUIT Boshlang‘ich kasaba uyushma qo‘mitasi</p>
+</footer>
+
+</body>
+</html>
